@@ -3,11 +3,16 @@ import numpy as np
 import math
 import random
 
+import os
+import inspect
+path = os.path.dirname(os.path.abspath(inspect.stack()[0][1]))
+path1 = path + '/busy_day.in'
+
 Sub_mas = []
 
 print('Extracting data')
 
-with open('D:/Kek_Kok_Kik/Drones delivery_compet/busy_day.in') as file:
+with open(path1) as file:
     line_list = file.read().splitlines()
 
 ROWS, COLS, DRONES_num, TURNS, MAXLOAD = map(int, line_list[0].split())
@@ -603,8 +608,10 @@ for i in DRONES_delivers:
     print("меньше или равно 2: ", i.momo, " больше 2: ", i.bobo)
 print("Заказов выполнено: ", doneOrdersyyy)
 
+
+path2 = path + '/submission.csv'
 print("Запись...")
-submis = open('D:/Kek_Kok_Kik/Drones delivery_compet/submission.csv', 'w')
+submis = open(path2, 'w')
 submis.write(str(len(Sub_mas)) + '\n')
 for i in Sub_mas:
     submis.write(i + '\n')

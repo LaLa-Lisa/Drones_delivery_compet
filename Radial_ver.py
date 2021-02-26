@@ -3,11 +3,17 @@ import numpy as np
 import math
 import random
 
+import os
+import inspect
+path = os.path.dirname(os.path.abspath(inspect.stack()[0][1]))
+path1 = path + '/busy_day.in'
+
+
 Sub_mas = []
 
 print('Extracting data')
 
-with open('D:/Kek_Kok_Kik/Drones delivery_compet/busy_day.in') as file:
+with open(path1) as file:
     line_list = file.read().splitlines()
 
 ROWS, COLS, DRONES_num, TURNS, MAXLOAD = map(int, line_list[0].split())
@@ -589,15 +595,19 @@ for turn_simul in range(TURNS,0,-1):
 print("Симуляция окончена")
 print("SCORE ", SCORE)
 
+path2 = path + '/submission.csv'
+
 print("Запись...")
-submis = open('D:/Kek_Kok_Kik/Drones delivery_compet/submission.csv', 'w')
+submis = open(path2, 'w')
 submis.write(str(len(Sub_mas)) + '\n')
 for i in Sub_mas:
     submis.write(i + '\n')
 print("окончена:)")
 
+
+path3 = path + '/saved.txt'
 print("Запись222...")
-submis = open('D:/Kek_Kok_Kik/Drones delivery_compet/saved.txt', 'w')
+submis = open(path3, 'w')
 submis.write(str(len(massforgraths)) + '\n')
 for i in massforgraths:
     submis.write(i + '\n')
