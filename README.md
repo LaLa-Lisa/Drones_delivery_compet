@@ -6,6 +6,9 @@ Developers:
 aleka_alexander@mail.ru
 
 Allahverdyan Alexander
+
 Martemyanov Alexey
+
 Markelova Anastasia
+
 Our professor: Dr. Ovanes Petrosian http://www.apmath.spbu.ru/en/staff/petrosjanol/index.html
