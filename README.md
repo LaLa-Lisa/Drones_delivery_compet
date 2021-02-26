@@ -1,14 +1,14 @@
 # Drones_delivery_compet
 ## Using Genetic Algorithm to solve the problem
-## The solution was written by a team of St. Petersburg State University students.
+### The solution was written by a team of St. Petersburg State University students.
 
-## Developers:
-### aleka_alexander@mail.ru
+### Developers:
+#### aleka_alexander@mail.ru
 
-### Allahverdyan Alexander
+#### Allahverdyan Alexander
 
-### Martemyanov Alexey
+#### Martemyanov Alexey
 
-### Markelova Anastasia
+#### Markelova Anastasia
 
-### Our professor: Dr. Ovanes Petrosian http://www.apmath.spbu.ru/en/staff/petrosjanol/index.html
+#### Our professor: Dr. Ovanes Petrosian http://www.apmath.spbu.ru/en/staff/petrosjanol/index.html
